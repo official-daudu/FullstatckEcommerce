@@ -1,8 +1,11 @@
-import express from "express";
+import express, { json, urlencoded } from "express";
 import productsRouter from "./routes/products/index";
 
 const port = 3030;
 const app = express();
+
+app.use(urlencoded({ extended: false }));
+app.use(json());
 
 app.use("/products", productsRouter);
 
