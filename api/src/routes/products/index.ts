@@ -5,15 +5,15 @@ import {
   GetProductById,
   ListProducts,
   UpdateProduct,
-} from "./productsController";
-import { validateData } from "../../middlewares/validationMiddleware";
+} from "./productsController.js";
+import { validateData } from "../../middlewares/validationMiddleware.js";
 
-import { productsTable } from "../../db/schema/productsSchema";
+import { productsTable } from "../../db/schema/productsSchema.js";
 import {
   createProductSchema,
   updateProductSchema,
-} from "../../db/schema/productsSchema";
-import { VerifySeller, VerifyToken } from "../../middlewares/authMiddleware";
+} from "../../db/schema/productsSchema.js";
+import { VerifySeller, VerifyToken } from "../../middlewares/authMiddleware.js";
 // const createProductSchema = z.object({
 //   name: z.string(),
 //   price: z.number(),

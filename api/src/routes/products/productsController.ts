@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
-import { db } from "../../db/index";
+import { db } from "../../db/index.js";
 
-import { productsTable } from "../../db/schema/productsSchema";
+import { productsTable } from "../../db/schema/productsSchema.js";
 import { eq } from "drizzle-orm";
 import _ from "lodash";
 
