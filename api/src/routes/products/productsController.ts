@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { db } from "../../db/index";
 
-import { productsTable } from "../../db/productsSchema";
+import { productsTable } from "../../db/schema/productsSchema";
 import { eq } from "drizzle-orm";
 import _ from "lodash";
 
@@ -34,6 +34,7 @@ export async function GetProductById(req: Request, res: Response) {
 
 export async function CreateProduct(req: Request, res: Response) {
   try {
+    console.log(req.userId);
     const [product] = await db
       .insert(productsTable)
       .values(req.cleanBody)
