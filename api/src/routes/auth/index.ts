@@ -5,7 +5,7 @@ import {
   loginSchema,
   usersTable,
 } from "../../db/schema/usersSchema.js";
-import bcrypt from "bcrypt";
+import bcrypt from "bcryptjs";
 import { db } from "../../db/index.js";
 import { eq } from "drizzle-orm";
 import jwt from "jsonwebtoken";
