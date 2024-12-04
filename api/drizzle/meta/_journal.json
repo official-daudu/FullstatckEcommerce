@@ -8,6 +8,13 @@
       "when": 1732533046601,
       "tag": "0000_calm_molten_man",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1733325801074,
+      "tag": "0001_nice_arachne",
+      "breakpoints": true
     }
   ]
 }

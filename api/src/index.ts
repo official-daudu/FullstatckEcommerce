@@ -1,6 +1,7 @@
 import express, { json, urlencoded } from "express";
 import productsRouter from "./routes/products/index.js";
 import authRouters from "./routes/auth/index.js";
+import ordersRoutes from "./routes/orders/index.js";
 import serverless from "serverless-http";
 
 const port = 8080;
@@ -11,6 +12,7 @@ app.use(json());
 
 app.use("/products", productsRouter);
 app.use("/auth", authRouters);
+app.use("/orders", ordersRoutes);
 
 const env = process.env.NODE_ENV || "development";
 
